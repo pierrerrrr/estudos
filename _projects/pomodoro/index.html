@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOCUS!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="src/assets/style.css">
+</head>
+
+<body class="bg-black text-white h-screen flex items-center justify-center" id="colorTheme">
+
+    <div class="bg-slate-900 p-10 rounded-2xl shadow-xl flex flex-col items-center gap-6 w-[90%] max-w-md" id="boxCounter">
+        <h1 class="text-4xl font-thin tracking-wide uppercase">Pomodoro</h1>
+        <h2 id="modo" class="text-xl text-sky-300 font-semibold">Foco</h2>
+        <div class="text-6xl font-thin bg-black/20 px-8 py-4 rounded-xl shadow-inner" id="timer">
+            25:00
+        </div>
+
+        <div class="nav-control flex items-center justify-center gap-6">
+            <button id="startButton"
+                class="mt-4 bg-emerald-500 hover:bg-emerald-600 transition-colors text-white font-thin py-3 px-12 rounded-lg shadow-md uppercase">
+                Start
+            </button>
+            <!-- <button id="stopButton"
+                class="mt-4 bg-red-500 hover:bg-red-600 transition-colors text-white font-bold py-3 px-12 rounded-lg shadow-md">
+                Stop
+            </button> -->
+        </div>
+
+        <p class="text-sm text-sky-300 mt-6 italic uppercase">do more.</p>
+    </div>
+
+    <script src="src/assets/script.js"></script>
+</body>
+
+</html>
