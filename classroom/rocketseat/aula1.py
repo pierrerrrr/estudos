@@ -1,11 +1,10 @@
-a = 1
-b = 1
+print("MADLIB ENGRAÇADO")
 
-soma = (a + b)
+startup = input("Digite um nome: ")
+linguagem = input("Digite uma linguagem: ")
+adjetivo = input("Digite um adjetivo legal: ")
+termo_tecnico = input("Digite um termo técnico: ")
 
-if (soma == 3): {
-    print("your result is 3!")
-}
-else: {
-    print("yout result isn't 3!")
-    }
+print()
+
+print('Na startup ' + startup + ', tudo começou com um grupo de programadores apaixonados por ' + linguagem + '. O ambiente era ' + adjetivo + ', cheio de ' + termo_tecnico + ' espalhados por todos os lados.')
