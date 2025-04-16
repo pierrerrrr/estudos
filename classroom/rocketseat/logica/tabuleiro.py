@@ -17,13 +17,26 @@ def exibeTabuleiro():
 
 def jogada(linha, coluna):
     # global jogador  funciona mas não é recomendado
+    if (
+        linha < 0 or linha > 2 or
+        coluna < 0 or coluna > 2 or
+        tabuleiro[linha][coluna] != ' '
+    ):
+        print("Jogada inválida!")
+        return jogador
     tabuleiro[linha][coluna] = jogador
-    if jogador == 'X':
-        return 'O'
-    else:
-        return 'X'
+    # if jogador == 'X':
+    #     return 'O'
+    # else:
+    #     return 'X'
+    return 'O' if jogador == 'X' else 'X'
 
-jogador = jogada(1,1)
-jogador = jogada(1,2)
-
-exibeTabuleiro()
+while True:
+    print(f'Jogador da vez: {jogador}')
+    try:
+        linha = int(input("Digite a linha: "))
+        coluna = int(input("Digite a coluna: "))
+        jogador = jogada(linha, coluna)
+    except (ValueError, IndexError):
+        print("Digite valores numéricos entre 0 e 2")
+    exibeTabuleiro()
