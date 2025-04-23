@@ -11,7 +11,7 @@ const button = document.querySelector("button");
 button.style.backgroundColor = "red";
 
 // setando atributos
-button.setAttribute("disabled", true);
+// button.setAttribute("disabled", true);
 
 
 // criando elementos
@@ -27,3 +27,16 @@ newGuest.append(guestName);
 console.log(newGuest.textContent);
 
 guests.prepend(newGuest);
+
+// event listener
+window.addEventListener("load", () => {
+    console.log("a página foi carregada!")
+})
+
+addEventListener("click", (event) => {
+    event.preventDefault();
+
+    // console.log(event);
+
+    console.log(event.target)
+})
