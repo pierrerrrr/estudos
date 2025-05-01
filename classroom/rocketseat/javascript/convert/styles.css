@@ -5,7 +5,7 @@
 }
 
 :root {
-  font-family: "Inter", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 16px;
 }
 
@@ -103,6 +103,7 @@ select:focus {
 }
 
 button {
+  font-family: "Sora", sans-serif !important;
   height: 3.25rem;
 
   background-color: #2f34ab;
