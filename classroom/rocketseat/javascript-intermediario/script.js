@@ -24,11 +24,14 @@ const user = {
   message: () => {
     console.log("olá pierre");
   },
+  hello_message: () => {
+    console.log(`Olá, ${user.email}`);
+  },
 };
 
 // acessando propriedades e metodos do objeto usando anotação de ponto
-console.log(user.addres)
+// console.log(user.addres);
 
-console.log(user.addres.street)
+// console.log(user.addres.street);
 
-user.message();
+user.hello_message();
