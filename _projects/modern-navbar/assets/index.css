@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 3rem;
+}
+
+.nav-logo {
+  width: 120px;
+  padding: 1rem 0;
+}
+
+.nav-logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-links-container {
+  padding: 16px 0;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links > .nav-links-item {
+  display: inline-block;
+  margin: 0 24px;
+  position: relative;
+}
+
+.nav-links > .nav-links-item > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #777;
+  font-weight: 500;
+  padding: 16px 0;
+  transition: 0.3s ease;
+}
+
+.nav-links > .nav-links-item:hover > a {
+  color: #2d57d9;
+}
+
+.nav-links-item > a > .fa-chevron-down {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-left: 8px;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.nav-links-item:hover > a > .fa-chevron-down {
+  transform: rotate(-180deg);
+}
+
+.nav-links > .nav-links-item > .dropdown-menu {
+  width: 200px;
+  position: absolute;
+  top: 80%;
+  left: -16px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transform: translateY(0);
+  transition: 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-links > .nav-links-item:hover > .dropdown-menu {
+  transform: translate(8px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-links > .nav-links-item > .dropdown-menu > .dropdown-menu-item {
+  list-style: none;
+}
+
+.nav-links > .nav-links-item > .dropdown-menu > .dropdown-menu-item > a {
+  text-decoration: none;
+  display: flex;
+  color: #2d57d9;
+  font-weight: 500;
+  transition: 0.3s ease;
+  padding: 16px;
+}
+
+.nav-links > .nav-links-item > .dropdown-menu > .dropdown-menu-item > a:hover {
+  color: #2d57d9;
+  background-color: #2d58d927;
+}
+
+.nav-container .open-menu {
+  display: none;
+  font-size: 24px;
+  color: #2d57d9;
+}
+
+.nav-container .close-menu {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  body {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .nav-container {
+    padding: 0 3rem;
+  }
+
+  .nav-container .nav-links-container {
+    position: absolute;
+    right: -400px;
+    visibility: hidden;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    overflow-y: auto;
+    background-color: #2d57d9;
+    z-index: 999;
+    padding: 15px;
+    transition: all 0.3s ease-in;
+  }
+
+  .nav-container .nav-links-container.open {
+    visibility: visible;
+    transition: all 0.3s ease-out;
+    right: 0;
+
+  }
+
+  .nav-links-container > .nav-links > .nav-links-item {
+    display: block;
+    margin: 0;
+  }
+
+  .nav-links-container > .nav-links > .nav-links-item > a {
+    color: #fff;
+    padding: 24px 16px;
+    border-bottom: 1px solid #ffffff20;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links-item:hover > a > .fa-chevron-down {
+    transform: rotate(0);
+  }
+
+  .nav-container > .nav-links-container > .nav-links > .dropdown-menu-branch.active > a > .fa-chevron-down {
+    transform: rotate(-180deg);
+
+  }
+
+  .nav-links > .nav-links-item > .dropdown-menu {
+    width: 100%;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff20;
+    background-color: transparent;
+    transform: translateY(0px);
+    box-shadow: none;
+    padding: 0px;
+    left: auto;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-links > .nav-links-item:hover > .dropdown-menu {
+    transform: translateY(0px);
+  }
+
+  .nav-links > .nav-links-item > .dropdown-menu-item > a {
+    color: #ffffff20;
+    border: none;
+  }
+
+  .nav-links > .nav-links-item > .dropdown-menu > .dropdown-menu-item > a, .nav-links > .nav-links-item > .dropdown-menu > .dropdown-menu-item > a:hover {
+    color: #fff;
+  }
+
+  .nav-links > .nav-links-item > .dropdown-menu-item > a:hover {
+    color: #fff;
+  }
+
+  .nav-logo {
+    padding: 1.5rem 0;
+  }
+
+  .nav-container .open-menu {
+    cursor: pointer;
+    display: block;
+  }
+
+  .nav-container .close-menu {
+    display: block;
+    padding: 16px;
+    cursor: pointer;
+    width: fit-content;
+  }
+}

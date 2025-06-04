@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar dropdown</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+
+<body>
+
+    <div class="nav-container">
+
+        <div class="nav-logo">
+            <a href="#"><img src="assets/logo-blog.png" alt="logo"></a>
+        </div>
+        <i class="fa-solid fa-bars open-menu"></i>
+
+        <div class="nav-links-container">
+            <i class="fa-solid fa-xmark close-menu"></i>
+
+            <ul class="nav-links">
+                <li class="nav-links-item dropdown-menu-branch">
+                    <a href="#" data-toggle="dropdown-menu">Blogs <i class="fa-solid fa-chevron-down"></i></a>
+                    <!-- menu dropdown -->
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#">Sub menu blog 1</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Sub menu blog 2</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Sub menu blog 3</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Sub menu blog 4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-links-item"><a href="#">Projects</a></li>
+                <li class="nav-links-item dropdown-menu-branch">
+                    <a href="#" data-toggle="dropdown-menu">About us <i class="fa-solid fa-chevron-down"></i></a>
+                    <!-- menu dropdown -->
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#">Sub menu about 1</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Sub menu about 2</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Sub menu about 3</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Sub menu about 4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-links-item"><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
