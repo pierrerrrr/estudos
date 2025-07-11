@@ -1,19 +1,39 @@
 {
-    "products": [
-        {
-            "id": "1",
-            "name": "Mouse",
-            "price": 29.99
-        },
-        {
-            "id": "2",
-            "name": "Keyboard",
-            "price": 49.99
-        },
-        {
-            "id": "3",
-            "name": "Monitor",
-            "price": 199.99
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Mouse",
+      "price": 29.99
+    },
+    {
+      "id": "2",
+      "name": "Keyboard",
+      "price": 49.99
+    },
+    {
+      "id": "3",
+      "name": "Monitor",
+      "price": 199.99
+    },
+    {
+      "id": "1752272690227",
+      "name": "shampoo",
+      "price": "49,90"
+    },
+    {
+      "id": 0.32943172280123745,
+      "name": "condicionador",
+      "price": "60,00"
+    },
+    {
+      "id": "0.01101011111011110011010110111001010000101111001000111",
+      "name": "sabonete",
+      "price": "5"
+    },
+    {
+      "id": "1752272908896",
+      "name": "areia de gato",
+      "price": "28,00"
+    }
+  ]
 }
