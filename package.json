@@ -1,8 +1,15 @@
 {
   "scripts": {
-    "server": "json-server server.json --port=3333"
+    "server": "json-server server.json --port=3333",
+    "build": "babel classroom\\rocketseat\\javascript-moderno\\compilers\\main.js --out-dir classroom\\rocketseat\\javascript-moderno\\compilers\\dist",
+    "dev": "babel classroom\\rocketseat\\javascript-moderno\\compilers\\main.js --watch --out-dir classroom\\rocketseat\\javascript-moderno\\compilers\\dist"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.17"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0"
   }
 }
