@@ -8,6 +8,12 @@ module.exports = {
         path: path.resolve(__dirname, "classroom/rocketseat/javascript-moderno/bundlers/dist")
     },
     mode: "development",
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "classroom/rocketseat/javascript-moderno/bundlers/dist"),
+        },
+        port: 3000,
+    },
     plugins: [
         new htmlWebpackPlugin(),
     ],

@@ -3,7 +3,8 @@
     "server": "json-server server.json --port=3333",
     "build": "babel classroom\\rocketseat\\javascript-moderno\\compilers\\main.js --out-dir classroom\\rocketseat\\javascript-moderno\\compilers\\dist",
     "dev": "babel classroom\\rocketseat\\javascript-moderno\\compilers\\main.js --watch --out-dir classroom\\rocketseat\\javascript-moderno\\compilers\\dist",
-    "build-wb": "webpack ./classroom/rocketseat/javascript-moderno/bundlers/src/js/index.js"
+    "build-wb": "webpack ./classroom/rocketseat/javascript-moderno/bundlers/src/js/index.js",
+    "dev-wb": "webpack serve"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.17"
@@ -17,6 +18,7 @@
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.100.2",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }
