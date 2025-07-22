@@ -2,7 +2,8 @@
   "scripts": {
     "server": "json-server server.json --port=3333",
     "build": "babel classroom\\rocketseat\\javascript-moderno\\compilers\\main.js --out-dir classroom\\rocketseat\\javascript-moderno\\compilers\\dist",
-    "dev": "babel classroom\\rocketseat\\javascript-moderno\\compilers\\main.js --watch --out-dir classroom\\rocketseat\\javascript-moderno\\compilers\\dist"
+    "dev": "babel classroom\\rocketseat\\javascript-moderno\\compilers\\main.js --watch --out-dir classroom\\rocketseat\\javascript-moderno\\compilers\\dist",
+    "build-wb": "webpack ./classroom/rocketseat/javascript-moderno/bundlers/src/js/index.js"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.17"
@@ -10,6 +11,8 @@
   "devDependencies": {
     "@babel/cli": "^7.28.0",
     "@babel/core": "^7.28.0",
-    "@babel/preset-env": "^7.28.0"
+    "@babel/preset-env": "^7.28.0",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
   }
 }
